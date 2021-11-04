@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@700&family=Montserrat+Alternates:wght@300;400&family=Montserrat:ital,wght@0,400;1,300&family=Parisienne&family=Philosopher&family=Qahiri&display=swap');
+
+:root {
+    --merienda : 'Merienda', cursive;
+    --montserrat : 'Montserrat', sans-serif;
+}
+
+.hero-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    list-style: none;
+    
+}
+
+header ul li{
+    display: inline;
+    margin: 0 60px; 
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+header li:hover{
+    background-color: rgb(255, 75, 75);
+    border-radius: 5px;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 70px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+
+.wish-text{
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    font-family: var(--merienda);
+    font-size: 6rem;
+    
+}
+
+
+.wish-text img{
+    position: absolute;
+    margin-top: 60px;
+    left: 30px;
+    z-index: -1;
+    height: 700px;
+}
+
+.diya-image img{
+   margin-right: 70px;
+   width: 400px;
+}
+
+.best-wishes {
+    margin: 150px 50px 0 50px;
+}
+
+.wishing-note {
+    border: 1px solid #918e8e ;
+    padding: 0 0 140px 0;
+    border-radius: 5px;
+    background-color: #051b3dd5;
+    color: #ffffff;
+}
+
+.wishing-note h2{
+    font-family: 'Cookie', cursive;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.wishing-note p{
+    color: #ffffff;
+    margin: 0 100px;
+    font-family: var(--montserrat);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.wishing-note:last-child{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.wishing-image{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.wishing-image img{
+    margin-top: 70px;
+    position: absolute;
+    opacity: .5;
+    
+}
+
+.about-diwali {
+    margin-top: 10rem;
+}
+
+.diwali-content{
+    display: flex;
+}
+
+.about-diwali h2{
+   text-align: center;
+   font-size: 4rem;
+   text-transform: capitalize;
+   font-family: 'Parisienne', cursive;
+}
+
+.diwali-description{
+    display: flex;
+    align-items: center;
+}
+
+.diwali-description p {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: .2rem;
+    font-size: 1.5rem;
+}
+
+.diwali-description img{
+    width: 300px;
+}
+
+footer {
+    margin-top: 200px;
+    padding: 100px 0 0 0;
+    background-color: #ffffff;
+    color: #6102fa;
+    border-top: 1px solid #918e8e;
+}
+
+.thanks{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Qahiri', sans-serif;
+}
+
+.my-photo {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.my-photo img{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 1px 0px;
+    border: 1px solid black;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width : 360px) {
+    header ul li{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .container {
+        margin-top: 0;
+        /* margin: 0; */
+    }
+    .hero-container {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wish-text {
+        /* margin: 0 30px; */
+        font-size: 5rem;
+    }
+
+    .wish-text img{
+        width: 300px;
+        height: 300px;
+        margin-top: 0;
+        left: 0;
+    }
+    .diya-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .diya-image img{
+        margin-right: 0;
+        width: 250px;
+    }
+
+    .best-wishes {
+        margin: 0 10px 0 10px;
+        /* margin: 0; */
+        margin-top: 100px;
+    }
+
+    .wishing-note {
+        padding: 0 0 50px 0;
+    }
+    .wishing-note h2{
+        font-size: 3rem;
+    }
+
+    .wishing-note p{
+        margin: 0 20px;
+    }
+
+    .wishing-image img{
+        margin-top: 180px;
+        width: 360px;
+    }
+
+    .about-diwali {
+        margin-top: 7rem;
+    }
+
+    .about-diwali h2{
+        font-size: 2rem;
+    }
+
+    .diwali-description .candle1{
+        display: none;
+    }
+
+    .diwali-description p{
+        padding: 0 30px;
+        /* text-align: justify; */
+    }
+    .diwali-description .candle2{
+        position: absolute;
+        z-index: -1;
+        opacity: .7;
+        /* padding: 0 40px; */
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .thanks {
+        font-size: 4rem;
+    }
+
+    .my-photo img{
+        width: 200px;
+    }
+}
